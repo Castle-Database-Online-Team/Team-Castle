@@ -1,6 +1,3 @@
-# Team-Castle
-Database Online Team "Castle"
-
 # Databases 2015
 ## Practical Teamwork Project
 
@@ -11,11 +8,11 @@ Database Online Team "Castle"
 
 | ID | VendorID |     Product Name    | MeasureID | Base Price |
 |----|----------|---------------------|-----------|------------|
-| 1  | 20       | Beer �Zagorka�      | 100       | 0.86       |
-| 2  | 30       | Vodka �Targovishte� | 100       | 7.56       |
-| 3  | 20       | Beer �Beck�s�       | 100       | 1.03       |
-| 4  | 10       | Chocolate �Milka�   | 200       | 2.80       |
-| �  | �        | �                   | �         | �          |
+| 1  | 20       | Beer “Zagorka”      | 100       | 0.86       |
+| 2  | 30       | Vodka “Targovishte” | 100       | 7.56       |
+| 3  | 20       | Beer “Beck’s”       | 100       | 1.03       |
+| 4  | 10       | Chocolate “Milka”   | 200       | 2.80       |
+| …  | …        | …                   | …         | …          |
 
 #### Vendors
 
@@ -24,7 +21,7 @@ Database Online Team "Castle"
 | 10 | Nestle Sofia Corp.                  |
 | 20 | Zagorka Corp.                       |
 | 30 | Targovishte Bottling Company   Ltd. |
-| �  | �                                   |
+| …  | …                                   |
 
 #### Measures
 
@@ -32,7 +29,7 @@ Database Online Team "Castle"
 |-----|--------------|
 | 100 | liters       |
 | 200 | pieces       |
-| �   | �            |
+| …   | …            |
 
 * Do not use the provided example but think of another case. Create your tables with at least 4 columns and try to be creative (it will be part of your final score). For testing purposes please fill between 10 and 50 records in each table. Try to use real-world data. You may use sequential IDs for the primary key or any other primary key notation.
 
@@ -49,7 +46,7 @@ Database Online Team "Castle"
 * Note that the ZIP file could contain few hundred dates (folders), each holding few hundreds Excel files, each holding thousands of data.
 * **Input**: MongoDB database; ZIP file with Excel 2003 reports. Output: data loaded in the SQL Server database.
 * _For example:_
-  * you may have the **MongoDB database �Supermarket�** holding information about some vendors and some products and a **set of Excel files** (*.xls) holding information about the sales in the different super�markets.
+  * you may have the **MongoDB database “Supermarket”** holding information about some vendors and some products and a **set of Excel files** (*.xls) holding information about the sales in the different super¬markets.
 
 ## Problem 2 - Generate PDF Reports
 * Your task is to generate a PDF reports summarizing information from the SQL Server.
@@ -71,60 +68,60 @@ Database Online Team "Castle"
         <td><strong>Sum</strong></td>
     </tr>
     <tr>
-        <td>Beer "Beck�s"</td>
+        <td>Beer "Beck’s"</td>
         <td>40 liters</td>
         <td>1.20</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">48.00</td>
     </tr>
     <tr>
         <td>Beer "Zagorka"</td>
         <td>37 liters</td>
         <td>1.00</td>
-        <td>Supermarket "Bourgas � Plaza"</td>
+        <td>Supermarket "Bourgas – Plaza"</td>
         <td align="right">37.00</td>
     </tr>
     <tr>
         <td>Chocolate "Milka"</td>
         <td>7 pieces</td>
         <td>2.85</td>
-        <td>Supermarket "Bay Ivan" � Zmeyovo</td>
+        <td>Supermarket "Bay Ivan" – Zmeyovo</td>
         <td align="right">19.95</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>14 liters</td>
         <td>8.50</td>
-        <td>Supermarket "Bourgas � Plaza"</td>
+        <td>Supermarket "Bourgas – Plaza"</td>
         <td align="right">119.00</td>
     </tr>
     <tr>
         <td>Chocolate "Milka"</td>
         <td>12 pieces</td>
         <td>2.90</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">34.80</td>
     </tr>
     <tr>
         <td>Beer "Zagorka"</td>
         <td>65 liters</td>
         <td>0.92</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">59.80</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>4 liters</td>
         <td>7.80</td>
-        <td>Supermarket "Bay Ivan" � Zmeyovo</td>
+        <td>Supermarket "Bay Ivan" – Zmeyovo</td>
         <td align="right">31.20</td>
     </tr>
     <tr>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
     </tr>
     <tr>
         <td colspan="4" align="right">Total sum for 20-Jul-2012:</td>
@@ -144,78 +141,78 @@ Database Online Team "Castle"
         <td>Beer "Zagorka"</td>
         <td>11 liters</td>
         <td>1.00</td>
-        <td>Supermarket "Bourgas � Plaza"</td>
+        <td>Supermarket "Bourgas – Plaza"</td>
         <td align="right">11.00</td>
     </tr>
     <tr>
         <td>Beer "Zagorka"</td>
         <td>78 liters</td>
         <td>0.92</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">71.76</td>
     </tr>
     <tr>
         <td>Beer "Zagorka"</td>
         <td>146 liters</td>
         <td>0.88</td>
-        <td>Supermarket "Plovdiv � Stolipinovo"</td>
+        <td>Supermarket "Plovdiv – Stolipinovo"</td>
         <td align="right">128.48</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>20 liters</td>
         <td>8.50</td>
-        <td>Supermarket "Bourgas � Plaza"</td>
+        <td>Supermarket "Bourgas – Plaza"</td>
         <td align="right">170.00</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>67 liters</td>
         <td>7.70</td>
-        <td>Supermarket "Plovdiv � Stolipinovo"</td>
+        <td>Supermarket "Plovdiv – Stolipinovo"</td>
         <td align="right">515.90</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>3 liters</td>
         <td>7.80</td>
-        <td>Supermarket "Bay Ivan" � Zmeyovo</td>
+        <td>Supermarket "Bay Ivan" – Zmeyovo</td>
         <td align="right">23.40</td>
     </tr>
     <tr>
-        <td>Beer "Beck�s"</td>
+        <td>Beer "Beck’s"</td>
         <td>43 liters</td>
         <td>1.20</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">51.60</td>
     </tr>
     <tr>
-        <td>Beer "Beck�s"</td>
+        <td>Beer "Beck’s"</td>
         <td>75 liters</td>
         <td>1.05</td>
-        <td>Supermarket "Plovdiv � Stolipinovo"</td>
+        <td>Supermarket "Plovdiv – Stolipinovo"</td>
         <td align="right">78.75</td>
     </tr>
     <tr>
         <td>Chocolate "Milka"</td>
         <td>9 pieces</td>
         <td>2.90</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">26.10</td>
     </tr>
     <tr>
         <td>Chocolate "Milka"</td>
         <td>5 pieces</td>
         <td>2.85</td>
-        <td>Supermarket "Bay Ivan" � Zmeyovo</td>
+        <td>Supermarket "Bay Ivan" – Zmeyovo</td>
         <td align="right">14.25</td>
     </tr>
     <tr>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
     </tr>
     <tr>
         <td colspan="4" align="right">Total sum for 21-Jul-2012:</td>
@@ -233,64 +230,64 @@ Database Online Team "Castle"
         <td>Beer "Zagorka"</td>
         <td>16.00</td>
         <td>1.00</td>
-        <td>Supermarket "Bourgas � Plaza"</td>
+        <td>Supermarket "Bourgas – Plaza"</td>
         <td align="right">16.00</td>
     </tr>
     <tr>
         <td>Beer "Zagorka"</td>
         <td>90.00</td>
         <td>0.92</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">82.80</td>
     </tr>
     <tr>
         <td>Beer "Zagorka"</td>
         <td>230.00</td>
         <td>0.88</td>
-        <td>Supermarket "Plovdiv � Stolipinovo"</td>
+        <td>Supermarket "Plovdiv – Stolipinovo"</td>
         <td align="right">202.40</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>24.00</td>
         <td>8.50</td>
-        <td>Supermarket "Bourgas � Plaza"</td>
+        <td>Supermarket "Bourgas – Plaza"</td>
         <td align="right">204.00</td>
     </tr>
     <tr>
         <td>Vodka "Targovishte"</td>
         <td>12.00</td>
         <td>7.70</td>
-        <td>Supermarket "Plovdiv � Stolipinovo"</td>
+        <td>Supermarket "Plovdiv – Stolipinovo"</td>
         <td align="right">92.40</td>
     </tr>
     <tr>
-        <td>Beer "Beck�s"</td>
+        <td>Beer "Beck’s"</td>
         <td>18.00</td>
         <td>1.20</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">21.60</td>
     </tr>
     <tr>
-        <td>Beer "Beck�s"</td>
+        <td>Beer "Beck’s"</td>
         <td>60.00</td>
         <td>1.05</td>
-        <td>Supermarket "Plovdiv � Stolipinovo"</td>
+        <td>Supermarket "Plovdiv – Stolipinovo"</td>
         <td align="right">63.00</td>
     </tr>
     <tr>
         <td>Chocolate "Milka"</td>
         <td>14.00</td>
         <td>2.90</td>
-        <td>Supermarket "Kaspichan � Center"</td>
+        <td>Supermarket "Kaspichan – Center"</td>
         <td align="right">40.60</td>
     </tr>
     <tr>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
-        <td>�</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
     </tr>
     <tr>
         <td colspan="4" align="right">Total sum for 21-Jul-2012:</td>
@@ -333,21 +330,21 @@ Database Online Team "Castle"
 <sales>
 ```
 
-* Save the report in an �**xml**� file.
+* Save the report in an “**xml**” file.
 * **Input**:
   * SQL Server database
 * **Output**:
   * XML report
 
 ## Problem 4 - JSON Reports
-* Your task is to write a program to create report for each product in JSON format and save all reports in MySQL. All reports may look like the sample below and should be saved in the MySQL database as well as in the file system (in a folder called �Json-Reports�, in files named �XX.json� where XX is the ID).
+* Your task is to write a program to create report for each product in JSON format and save all reports in MySQL. All reports may look like the sample below and should be saved in the MySQL database as well as in the file system (in a folder called “Json-Reports”, in files named “XX.json” where XX is the ID).
 * Sample product report in JSON format:
 
 **3.json**
 ```javascript
 {
   "product-id" : 3,
-  "product-name" : "Beer �Beck�s�",
+  "product-name" : "Beer “Beck’s”",
   "vendor-name" : "Zagorka Corp.",
   "total-quantity-sold" : 236,
   "total-incomes" : 262.95,
@@ -357,7 +354,7 @@ Database Online Team "Castle"
 ```javascript
 {
   "product-id" : 1,
-  "product-name" : "Beer �Zagorka�",
+  "product-name" : "Beer “Zagorka”",
   "vendor-name" : "Zagorka Corp.",
   "total-quantity-sold" : 673,
   "total-incomes" : 609.24,
@@ -367,7 +364,7 @@ Database Online Team "Castle"
 ```javascript
 {
   "product-id" : 4,
-  "product-name" : "Chocolate �Milka�",
+  "product-name" : "Chocolate “Milka”",
   "vendor-name" : "Nestle Sofia Corp.",
   "total-quantity-sold" : 47,
   "total-incomes" : 135.70,
@@ -377,7 +374,7 @@ Database Online Team "Castle"
 ```javascript
 {
   "product-id" : 2,
-  "product-name" : "Vodka �Targovishte�",
+  "product-name" : "Vodka “Targovishte”",
   "vendor-name" : "Targovishte Bottling Company Ltd.",
   "total-quantity-sold" : 144,
   "total-incomes" : 1155.90,
@@ -426,10 +423,10 @@ Database Online Team "Castle"
 
 |    Product Name           |    Tax    |
 |---------------------------|:---------:|
-|    Beer �Beck�s�          |    20%    |
-|    Beer �Zagorka�         |    20%    |
-|    Chocolate   �Milka�    |    18%    |
-|    Vodka �Targovishte�    |    25%    |
+|    Beer “Beck’s”          |    20%    |
+|    Beer “Zagorka”         |    20%    |
+|    Chocolate   “Milka”    |    18%    |
+|    Vodka “Targovishte”    |    25%    |
 
 * Write a program to **read the MySQL database** of reports, **read the information from SQLite** and generate a **single Excel 2007** file holding some information by your choice.
 * _For example:_
