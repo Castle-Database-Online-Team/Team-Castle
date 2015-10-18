@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactoryConsoleClient", "GsmFactoryConsoleClient\GsmFactoryConsoleClient.csproj", "{1BF127DF-786A-4990-A58D-BF6C6FEF5EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactory.MongoDb", "GsmFactory.MongoDb\GsmFactory.MongoDb.csproj", "{B56306C5-05BE-45CD-A1A0-80A25FCDAFDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BF127DF-786A-4990-A58D-BF6C6FEF5EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF127DF-786A-4990-A58D-BF6C6FEF5EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF127DF-786A-4990-A58D-BF6C6FEF5EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF127DF-786A-4990-A58D-BF6C6FEF5EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56306C5-05BE-45CD-A1A0-80A25FCDAFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56306C5-05BE-45CD-A1A0-80A25FCDAFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56306C5-05BE-45CD-A1A0-80A25FCDAFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56306C5-05BE-45CD-A1A0-80A25FCDAFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

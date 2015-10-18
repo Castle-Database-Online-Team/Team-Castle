@@ -1,0 +1,5 @@
+ID	Currensy
+21000	BGN
+22000	EURO
+23000	USD
+	
