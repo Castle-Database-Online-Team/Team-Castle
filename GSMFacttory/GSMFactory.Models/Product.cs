@@ -1,22 +1,22 @@
-﻿namespace GSMFactory.Models
+﻿namespace GsmFactory.Models
 {
     public class Product
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public ProductType Type { get; set; }
 
         public string Model { get; set; }
 
-        public int MeasureID { get; set; }
+        public virtual Measure Measure { get; set; }
 
-        public Currency Currency { get; set; }
+        public virtual Currency Currency { get; set; }
 
-        public OperationalSystem OS { get; set; }
+        public virtual Os OS { get; set; }
 
-        public int Display { get; set; }
+        public virtual Display Display { get; set; }
 
-        public int Memory { get; set; }
+        public virtual Memory Memory { get; set; }
 
         public decimal BasePrice { get; set; }
 

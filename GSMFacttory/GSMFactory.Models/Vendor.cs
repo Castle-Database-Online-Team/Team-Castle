@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace GSMFactory.Models
+﻿namespace GsmFactory.Models
 {
+    using System.Collections.Generic;
+
     public class Vendor
     {
         public Vendor()
@@ -9,7 +9,7 @@ namespace GSMFactory.Models
             this.Products = new HashSet<Product>();
         }
 
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public string Name { get; set; }
 

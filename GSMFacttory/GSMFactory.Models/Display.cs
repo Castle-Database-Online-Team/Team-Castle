@@ -1,13 +1,20 @@
-﻿using GSMFactory.Models.Enum;
-
-namespace GSMFactory.Models
+﻿namespace GsmFactory.Models
 {
+    using System.Collections.Generic;
+
     public class Display
     {
-        public int ID { get; set; }
+        public Display()
+        {
+            this.Products = new HashSet<Product>();
+        }
+
+        public int Id { get; set; }
 
         public int Size { get; set; }
 
         public Measure Measure { get; set; }
+
+        public virtual HashSet<Product> Products { get; set; }
     }
 }

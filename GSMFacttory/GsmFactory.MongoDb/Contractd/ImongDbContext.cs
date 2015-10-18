@@ -1,8 +1,9 @@
 ﻿namespace GsmFactory.MongoDb.Contractd
 {
+    using Mapping;
     using MongoDB.Driver;
-    using GsmFactory.MongoDb.Mapping;
-    interface IMongDbContext
+
+    internal interface IMongDbContext
     {
         MongoCollection<ProductNameMap> ProductName { get; }
         MongoCollection<ProduserMap> Produser { get; }

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace GSMFactory.Models
+﻿namespace GsmFactory.Models
 {
+    using System.Collections.Generic;
+
     public class Producer
     {
         public Producer()
@@ -9,10 +9,10 @@ namespace GSMFactory.Models
             this.Products = new HashSet<Product>();
         }
 
-        public int ID { get; set; }
+        public virtual HashSet<Product> Products { get; set; }
+
+        public int Id { get; set; }
 
         public string Name { get; set; }
-
-        public virtual HashSet<Product> Products { get; set; }
     }
 }

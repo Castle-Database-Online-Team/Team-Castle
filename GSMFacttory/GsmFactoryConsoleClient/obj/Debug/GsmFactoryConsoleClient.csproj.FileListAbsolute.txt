@@ -11,3 +11,13 @@ D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\MongoDB.D
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\obj\Debug\GsmFactoryConsoleClient.csprojResolveAssemblyReference.cache
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\obj\Debug\GsmFactoryConsoleClient.exe
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\obj\Debug\GsmFactoryConsoleClient.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\EntityFramework.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\EntityFramework.SqlServer.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\GSMFactory.Data.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\GSMFactory.Models.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\GsmFactory.MongoDb.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\GSMFactory.Data.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\GSMFactory.Models.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\GsmFactory.MongoDb.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\EntityFramework.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\EntityFramework.SqlServer.xml
