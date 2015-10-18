@@ -1,0 +1,12 @@
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\GsmFactory.MongoDb.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\GsmFactory.MongoDb.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Bson.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.Core.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.Legacy.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Bson.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.Legacy.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.csprojResolveAssemblyReference.cache
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.pdb

@@ -2,8 +2,8 @@
 {
     using System;
     using MongoDB.Driver;
-    using GsmFactory.MongoDb.Contractd;
-    using GsmFactory.MongoDb.Mapping;
+    using MongoDb.Contractd;
+    using Mapping;
 
     public class MongoDbContext : IMongDbContext
     {

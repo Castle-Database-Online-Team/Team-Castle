@@ -1,0 +1,35 @@
+C:\Users\Emilia\documents\visual studio 2013\Projects\GSMFactory.Models\GSMFactory.Models\bin\Debug\GSMFactory.Models.dll
+C:\Users\Emilia\documents\visual studio 2013\Projects\GSMFactory.Models\GSMFactory.Models\bin\Debug\GSMFactory.Models.pdb
+C:\Users\Emilia\documents\visual studio 2013\Projects\GSMFactory.Models\GSMFactory.Models\obj\Debug\GSMFactory.Models.csprojResolveAssemblyReference.cache
+C:\Users\Emilia\documents\visual studio 2013\Projects\GSMFactory.Models\GSMFactory.Models\obj\Debug\GSMFactory.Models.dll
+C:\Users\Emilia\documents\visual studio 2013\Projects\GSMFactory.Models\GSMFactory.Models\obj\Debug\GSMFactory.Models.pdb
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.dll.config
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.pdb
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Bson.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Core.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.xml
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Bson.xml
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.xml
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.csprojResolveAssemblyReference.cache
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.dll
+D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.dll.config
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Bson.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Core.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Bson.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.csprojResolveAssemblyReference.cache
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.pdb
