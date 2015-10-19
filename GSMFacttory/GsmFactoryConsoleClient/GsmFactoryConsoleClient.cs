@@ -21,7 +21,7 @@
 
             var creator = new XmlReportCreator();
             Console.WriteLine(creator.CreateReport(Os));
-            Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
+            // Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
         }
     }
 }

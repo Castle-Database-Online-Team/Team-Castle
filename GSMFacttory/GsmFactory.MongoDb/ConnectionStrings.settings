@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GsmFactory.MongoDb" GeneratedClassName="ConnectionStrings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MongoDbCloudDatabase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mongodb://castle:telerik@ds041404.mongolab.com:041404/gsmfactory</Value>
+    </Setting>
+    <Setting Name="MongoDbDefaultDatabase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gsmfactorydata</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

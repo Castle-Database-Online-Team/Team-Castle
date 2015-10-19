@@ -1,74 +1,77 @@
 ﻿namespace GsmFactory.MongoDb
 {
     using System;
-    using Contractd;
-    using Mapping;
+
+    using GsmFactory.MongoDb.Contractd;
+    using GsmFactory.MongoDb.Mapping;
     using MongoDB.Driver;
 
     public class MongoDbContext : IMongDbContext
     {
-        private const string DatabaseHost = "mongodb://127.0.0.1";
-        private const string DatabaseName = "GsmFactory";
-
-        private readonly string conectionHost;
+        private readonly string connectionString;
         private readonly string databaseName;
 
-        public MongoDbContext(string DatabaseHost, string DatabaseName)
+        public MongoDbContext()
+            : this(ConnectionStrings.Default.MongoDbCloudDatabase, ConnectionStrings.Default.MongoDbDefaultDatabase)
         {
-            this.conectionHost = DatabaseHost;
-            this.databaseName = DatabaseName;
+        }
+
+        public MongoDbContext(string connectionString, string databaseName)
+        {
+            this.connectionString = connectionString;
+            this.databaseName = databaseName;
         }
 
         public MongoCollection<ProductNameMap> ProductName
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<ProductNameMap>("ProductName"); }
         }
 
         public MongoCollection<ProduserMap> Produser
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<ProduserMap>("Produser"); }
         }
 
         public MongoCollection<MeasureМаp> Measure
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<MeasureМаp>("Measure"); }
         }
 
         public MongoCollection<DisplayMap> Display
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<DisplayMap>("Display"); }
         }
 
         public MongoCollection<PlatformOsMap> PlatformOs
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<PlatformOsMap>("PlatformOs"); }
         }
 
         public MongoCollection<MemoryMap> Memory
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<MemoryMap>("Memory"); }
         }
 
         public MongoCollection<CurrensyMap> Currensy
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<CurrensyMap>("Currensy"); }
         }
 
         public MongoCollection<CityMap> Cities
         {
-            get { throw new NotImplementedException(); }
+            get { return this.GetCollection<CityMap>("Cities"); }
         }
 
-        private IMongoCollection<T> GetCollection<T>(string collectionName)
+        private MongoCollection<T> GetCollection<T>(string collectionName)
         {
             var database = this.GetDatabase();
             var collection = database.GetCollection<T>(collectionName);
-            return (IMongoCollection<T>) collection;
+            return collection;
         }
 
         private MongoDatabase GetDatabase()
         {
-            var mongoClient = new MongoClient(this.conectionHost);
+            var mongoClient = new MongoClient(this.connectionString);
             var server = mongoClient.GetServer();
             var db = server.GetDatabase(this.databaseName);
             return db;
