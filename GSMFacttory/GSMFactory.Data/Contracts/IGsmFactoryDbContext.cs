@@ -1,11 +1,9 @@
 ﻿namespace GsmFactory.Data.Contracts
 {
-    using System;
     using System.Data.Entity;
-    using System.Linq;
     using GsmFactory.Models;
 
-    public interface IRobotsFactoryDbContext : IDbContext
+    public interface IGsmFactoryDbContext : IDbContext
     {
         IDbSet<Product> Products { get; set; }
 
@@ -22,6 +20,18 @@
         IDbSet<Memory> Memories { get; set; }
 
         IDbSet<Os> Os { get; set; }
+
+        IDbSet<Vendor> Vendors { get; set; }
+
+        IDbSet<City> Citis { get; set; }
+
+        IDbSet<Person> Persons { get; set; }
+
+        IDbSet<ProduserExpense> Expenses { get; set; }
+
+        IDbSet<SalesReport> SalesReports { get; set; }
+
+        IDbSet<SalesReportEntry> SalesReportEntries { get; set; }
 
         IDbSet<Store> Stores { get; set; }
     }

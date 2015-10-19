@@ -4,14 +4,13 @@
     using MongoDB.Bson.Serialization.Attributes;
 
     public class ProductNameMap
-    {
-        private string thisProductNameName;
+    {       
 
         [BsonConstructor]
-        public ProductNameMap(int productNameId, string productNameName)
+        public ProductNameMap(int productNameId, string productName)
         {
             this.ProductNameId = productNameId;
-            this.ProductNameName = productNameName;
+            this.ProductName = productName;
         }
 
         [BsonId]
@@ -19,6 +18,6 @@
 
         public int ProductNameId { get;  set; }
 
-        public string ProductNameName { get;  set; }
+        public string ProductName { get;  set; }
     }
 }

@@ -16,6 +16,7 @@
         public ObjectId Id { get; set; }
 
         public int ProduserId { get; set; }
+
         public string ProduserName { get; set; }
     }
 }

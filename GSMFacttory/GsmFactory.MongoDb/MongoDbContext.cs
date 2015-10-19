@@ -2,7 +2,7 @@
 {
     using System;
 
-    using GsmFactory.MongoDb.Contractd;
+    using GsmFactory.MongoDb.Contracts;
     using GsmFactory.MongoDb.Mapping;
     using MongoDB.Driver;
 
@@ -20,11 +20,6 @@
         {
             this.connectionString = connectionString;
             this.databaseName = databaseName;
-        }
-
-        public MongoCollection<ProductMap> Product
-        {
-            get { return this.GetCollection<ProductMap>("Product"); }
         }
 
         public MongoCollection<ProductNameMap> ProductName
@@ -70,11 +65,30 @@
         public MongoCollection<VendorMap> Vendor
         {
             get { return this.GetCollection<VendorMap>("Vendor"); }
+        }        
+
+        public MongoCollection<ProduserExpenseMap> ProduserExpense
+        {
+            get
+            {
+                return this.GetCollection<ProduserExpenseMap>("ProduserExpenses");
+            }
         }
 
-        public MongoCollection<PersonMap> Person
+        public MongoCollection<ProductMap> Products
         {
-            get { return this.GetCollection<PersonMap>("Person"); }
+            get
+            {
+                return this.GetCollection<ProductMap>("Products");
+            }
+        }
+
+        public MongoCollection<PersonMap> Persons
+        {
+            get
+            {
+                return this.GetCollection<PersonMap>("Persons");
+            }
         }
 
         private MongoCollection<T> GetCollection<T>(string collectionName)

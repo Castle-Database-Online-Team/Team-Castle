@@ -1,30 +1,65 @@
 ﻿namespace GsmFactory.Data
 {
     using System.Data.Entity;
-    using Models;
+    using GsmFactory.Models;
+    using GsmFactory.Data.Contracts;
+    using GsmFactory.Data.Migrations;
 
-    public class GsmFactoryContext : DbContext
+    public class GsmFactoryContext : DbContext, IGsmFactoryDbContext
     {
-        public GsmFactoryContext() : base("GsmFactory")
+        private const string GsmFactoryDatabaseName = "GsmFactory";
+        public GsmFactoryContext()
+            : base(GsmFactoryDatabaseName)
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<GsmFactoryContext, Configuration>());
         }
 
-        public DbSet<Product> Products { get; set; }
+        public GsmFactoryContext(string connectionString)
+            : this()
+        {
+            this.Database.Connection.ConnectionString = connectionString;
+        }
 
-        public DbSet<ProductType> ProducTypes { get; set; }
+        public IDbSet<City> Citis{ get; set; }
 
-        public DbSet<Vendor> Vendors { get; set; }
 
-        public DbSet<Producer> Producers { get; set; }
+        public IDbSet<Currency> Currencies { get; set; }
+        
 
-        public DbSet<Display> Displays { get; set; }
+        public IDbSet<Display> Displaies { get; set; }
 
-        public DbSet<Currency> Currencies { get; set; }
+        public IDbSet<Measure> Measures { get; set; }
 
-        public DbSet<Measure> Measures { get; set; }
+        public IDbSet<Memory> Memories { get; set; }
 
-        public DbSet<Memory> Memories { get; set; }
+        public IDbSet<Os> Os { get; set; }
 
-        public DbSet<Os> OperatingSystems { get; set; }
+        public IDbSet<Person> Persons { get; set; }
+
+        public IDbSet<Producer> Producers { get; set; }
+
+        public IDbSet<Product> Products { get; set; }
+
+        public IDbSet<ProductType> ProductTypes { get; set; }
+
+        public IDbSet<SalesReportEntry> SalesReportEntries { get; set; }
+
+        public IDbSet<SalesReport> SalesReports { get; set; }
+
+        public IDbSet<Store> Stores { get; set; }
+
+        public IDbSet<Vendor> Vendors { get; set; }
+
+        public IDbSet<ProduserExpense> Expenses { get; set; }
+
+        public new IDbSet<T> Set<T>() where T : class
+        {
+            return base.Set<T>();
+        }
+
+        public new void SaveChanges()
+        {
+            base.SaveChanges();
+        }
     }
 }

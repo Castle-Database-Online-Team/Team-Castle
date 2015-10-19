@@ -52,3 +52,5 @@ D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.xml
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.csprojResolveAssemblyReference.cache
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.dll
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.pdb
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Legacy.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Legacy.xml

@@ -11,7 +11,7 @@
         public string PersonName { get; set; }
 
         [Required]
-        public string phone { get; set; }
+        public int Phone { get; set; }
 
         [Required]
         public string Email { get; set; }

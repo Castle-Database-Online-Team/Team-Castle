@@ -1,7 +1,6 @@
 ﻿namespace GsmFactory.Data.Contracts
 {
     using System;
-    using System.Linq;
     using GsmFactory.Models;
 
     public interface IGsmFactoryData : IDisposable
@@ -11,6 +10,8 @@
         IGenericRepository<ProductType> ProductTypes { get; }
 
         IGenericRepository<Currency> Currencies { get; }
+
+        IGenericRepository<City> Cities { get; }
 
         IGenericRepository<Display> Displaies { get; }
 
@@ -22,7 +23,17 @@
 
         IGenericRepository<Producer> Producers { get; }
 
+        IGenericRepository<Person> Persons { get; }
+
         IGenericRepository<Vendor> Vendors { get; }
+
+        IGenericRepository<ProduserExpense> Expenses { get; }
+        
+        IGenericRepository<SalesReport> SalesReports { get; }
+
+        IGenericRepository<SalesReportEntry> SalesReportEntries { get; }
+
+        IGenericRepository<Store> Stores { get; }
 
         int SaveChanges();
     }

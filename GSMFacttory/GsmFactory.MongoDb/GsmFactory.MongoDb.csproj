@@ -66,10 +66,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>ConnectionStrings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Contractd\ImongDbContext.cs" />
+    <Compile Include="Contracts\IMongDbContext.cs" />
     <Compile Include="Mapping\CityMap.cs" />
     <Compile Include="Mapping\CurrensyMap.cs" />
     <Compile Include="Mapping\DisplayMap.cs" />
+    <Compile Include="Mapping\ProduserExpenseMap.cs" />
     <Compile Include="Mapping\MeasureМаp.cs" />
     <Compile Include="Mapping\MemoryMap.cs" />
     <Compile Include="Mapping\PersonMap.cs" />
