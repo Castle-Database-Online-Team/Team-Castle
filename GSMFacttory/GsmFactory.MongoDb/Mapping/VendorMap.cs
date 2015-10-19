@@ -18,14 +18,14 @@
         [BsonId]
         public ObjectId Id { get; set; }
 
-        public int VendorMapId { get;  set; }
+        public int VendorMapId { get; set; }
 
-        public int CityId { get;  set; }
+        public int CityId { get; set; }
 
-        public string VendorMapName { get;  set; }
+        public string VendorMapName { get; set; }
 
-        public string VendorAddress { get;  set; }
+        public string VendorAddress { get; set; }
 
-        public int Person { get;  set; }
+        public int Person { get; set; }
     }
 }

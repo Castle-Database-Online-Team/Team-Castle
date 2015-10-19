@@ -1,9 +1,7 @@
 ﻿namespace GsmFactory.MongoDb
 {
-    using System;
-
-    using GsmFactory.MongoDb.Contractd;
-    using GsmFactory.MongoDb.Mapping;
+    using Contractd;
+    using Mapping;
     using MongoDB.Driver;
 
     public class MongoDbContext : IMongDbContext
@@ -25,6 +23,16 @@
         public MongoCollection<ProductMap> Product
         {
             get { return this.GetCollection<ProductMap>("Product"); }
+        }
+
+        public MongoCollection<VendorMap> Vendor
+        {
+            get { return this.GetCollection<VendorMap>("Vendor"); }
+        }
+
+        public MongoCollection<PersonMap> Person
+        {
+            get { return this.GetCollection<PersonMap>("Person"); }
         }
 
         public MongoCollection<ProductNameMap> ProductName
@@ -65,16 +73,6 @@
         public MongoCollection<CityMap> Cities
         {
             get { return this.GetCollection<CityMap>("Cities"); }
-        }
-
-        public MongoCollection<VendorMap> Vendor
-        {
-            get { return this.GetCollection<VendorMap>("Vendor"); }
-        }
-
-        public MongoCollection<PersonMap> Person
-        {
-            get { return this.GetCollection<PersonMap>("Person"); }
         }
 
         private MongoCollection<T> GetCollection<T>(string collectionName)

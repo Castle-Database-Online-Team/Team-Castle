@@ -1,8 +1,7 @@
 ﻿namespace GsmFactory.Data.Contracts
 {
     using System;
-    using System.Linq;
-    using GsmFactory.Models;
+    using Models;
 
     public interface IGsmFactoryData : IDisposable
     {

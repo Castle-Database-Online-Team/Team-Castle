@@ -1,22 +1,18 @@
-﻿namespace GsmFactory.JsonReport
+﻿namespace GsmFactory.ReportCreators
 {
     using System.Collections.Generic;
-    using System.Text;
-    using CommonResources;
 
     public abstract class ReportCreator
     {
-        protected  List<string> productsReportsEntries;
-        
-        protected string objectType;
-        
         protected string fileExtention;
-        
+
         protected string folderExtention;
 
-        public abstract string CreateReport<T>(T item);
+        protected string objectType;
+        protected List<string> reportsEntries;
+
+        public abstract string CreateReportEntry<T>(T item);
 
         public abstract string SaveReport(string path);
-
     }
 }

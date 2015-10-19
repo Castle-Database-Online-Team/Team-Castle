@@ -33,6 +33,7 @@
 
         [ForeignKey("Display")]
         public int DisplayId { get; set; }
+
         public virtual Display Display { get; set; }
 
         [ForeignKey("Memory")]
