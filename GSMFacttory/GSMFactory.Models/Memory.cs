@@ -1,20 +1,19 @@
 ﻿namespace GsmFactory.Models
 {
-    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Memory
     {
-        public Memory()
-        {
-            this.Products = new HashSet<Product>();
-        }
-
-        public virtual HashSet<Product> Products { get; set; }
-
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public int Size { get; set; }
 
-        public Measure Measure { get; set; }
+        [ForeignKey("Measure")]
+        public int MeasureId { get; set; }
+
+        public virtual Measure Measure { get; set; }
     }
 }

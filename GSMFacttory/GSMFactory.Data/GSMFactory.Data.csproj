@@ -64,6 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IDbContext.cs" />
+    <Compile Include="Contracts\IGenericRepository.cs" />
+    <Compile Include="Contracts\ILogger.cs" />
+    <Compile Include="Contracts\IGsmFactoryData.cs" />
+    <Compile Include="Contracts\IGsmFactoryDbContext.cs" />
     <Compile Include="GsmFactoryContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

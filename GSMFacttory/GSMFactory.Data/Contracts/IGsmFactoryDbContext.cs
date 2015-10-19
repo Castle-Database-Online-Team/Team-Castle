@@ -1,4 +1,4 @@
-﻿namespace RobotsFactory.Data.Contracts
+﻿namespace GsmFactory.Data.Contracts
 {
     using System;
     using System.Data.Entity;
@@ -24,7 +24,5 @@
         IDbSet<Os> Os { get; set; }
 
         IDbSet<Store> Stores { get; set; }
-
-        IDbSet<ManufacturerExpense> Expenses { get; set; }
     }
 }

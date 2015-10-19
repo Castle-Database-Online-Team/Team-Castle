@@ -1,18 +1,13 @@
 ﻿namespace GsmFactory.Models
 {
-    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     public class ProductType
     {
-        public ProductType()
-        {
-            this.Products = new HashSet<Product>();
-        }
-
-        public virtual HashSet<Product> Products { get; set; }
-
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
     }
 }

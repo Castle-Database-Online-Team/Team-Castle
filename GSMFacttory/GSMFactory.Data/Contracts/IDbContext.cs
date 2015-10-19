@@ -1,4 +1,4 @@
-namespace RobotsFactory.Data.Contracts
+namespace GsmFactory.Data.Contracts
 {
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
