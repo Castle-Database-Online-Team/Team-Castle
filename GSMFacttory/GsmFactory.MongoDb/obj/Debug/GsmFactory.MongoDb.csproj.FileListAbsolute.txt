@@ -42,3 +42,6 @@ D:\Telerik\DB\TeamWork\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Dr
 D:\Telerik\DB\TeamWork\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.csprojResolveAssemblyReference.cache
 D:\Telerik\DB\TeamWork\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.dll
 D:\Telerik\DB\TeamWork\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.pdb
+C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.csprojResolveAssemblyReference.cache
+C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.dll
+C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.pdb
