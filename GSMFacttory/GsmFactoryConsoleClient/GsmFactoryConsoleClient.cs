@@ -22,8 +22,8 @@
             //var creator = new XmlReportCreator();
             //Console.WriteLine(creator.CreateReport(Os));
             //Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
-             Person person = new Person{Email="onche.bonche@abv.bg",PersonName="Big Boss",phone = "+359887653678"};
-             Person person2 = new Person { Email = "onche.adasdnche@abv.bg", PersonName = "Humble Employee", phone = "+359sdfsfasf78" };
+             Person person = new Person{Email="onche.bonche@abv.bg",PersonName="Big Boss",Phone = "+359887653678"};
+             Person person2 = new Person { Email = "onche.adasdnche@abv.bg", PersonName = "Humble Employee", Phone = "+359sdfsfasf78" };
 
             var creator = new PdfReportCreator();
             Console.WriteLine(creator.CreateReportEntry(person));

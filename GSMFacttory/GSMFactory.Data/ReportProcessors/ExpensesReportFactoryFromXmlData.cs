@@ -4,7 +4,7 @@
     using System.Linq;
     using GsmFactory.Data.Contracts;
     using GsmFactory.Models;
-    using JsonReport;
+    using GsmFactory.ReportCreators;
 
     public class ExpensesReportFactoryFromXmlData
     {

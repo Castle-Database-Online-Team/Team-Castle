@@ -12,7 +12,7 @@
         {
             this.PersonId = personId;
             this.PersonName = personName;
-            this.Phone = phone;
+            this.Phone = Phone;
             this.Email = email;
         }
 
@@ -21,9 +21,10 @@
 
         public int PersonId { get; set; }
 
-        public int Phone { get; set; }
+        public string Phone { get; set; }
 
         public string PersonName { get; set; }
+
         public string Email { get; set; }
     }
 }

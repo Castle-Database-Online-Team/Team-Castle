@@ -70,12 +70,7 @@
         public MongoCollection<CityMap> Cities
         {
             get { return this.GetCollection<CityMap>("Cities"); }
-        }
-
-        public MongoCollection<VendorMap> Vendor
-        {
-            get { return this.GetCollection<VendorMap>("Vendor"); }
-        }        
+        }            
 
         public MongoCollection<ProduserExpenseMap> ProduserExpense
         {

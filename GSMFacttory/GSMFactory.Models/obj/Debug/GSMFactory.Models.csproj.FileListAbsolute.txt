@@ -41,9 +41,6 @@ D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\GSMFactory.Models.
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.dll
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.SqlServer.dll
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\Ionic.Zip.dll
-D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Bson.dll
-D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Core.dll
-D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.dll
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.xml
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\Ionic.Zip.xml

@@ -22,6 +22,54 @@
             this.context = context;
         }
 
+        public IGenericRepository<Producer> Producers
+        {
+            get
+            {
+                return this.GetRepository<Producer>();
+            }
+        }
+
+        public IGenericRepository<Person> Person
+        {
+            get
+            {
+                return this.GetRepository<Person>();
+            }
+        }
+
+        public IGenericRepository<Display> Display
+        {
+            get
+            {
+                return this.GetRepository<Display>();
+            }
+        }
+
+        public IGenericRepository<Measure> Measure
+        {
+            get
+            {
+                return this.GetRepository<Measure>();
+            }
+        }
+
+        public IGenericRepository<Memory> Memory
+        {
+            get
+            {
+                return this.GetRepository<Memory>();
+            }
+        }
+
+        public IGenericRepository<Vendor> Vendor
+        {
+            get
+            {
+                return this.GetRepository<Vendor>();
+            }
+        }
+
         public IGenericRepository<Product> Products
         {
             get
@@ -38,67 +86,11 @@
             }
         }
 
-        public IGenericRepository<Currency> Currencies
-        {
-            get
-            {
-                return this.GetRepository<Currency>();
-            }
-        }
-
         public IGenericRepository<City> Cities
         {
             get
             {
                 return this.GetRepository<City>();
-            }
-        }
-
-        public IGenericRepository<Display> Displaies
-        {
-            get
-            {
-                return this.GetRepository<Display>();
-            }
-        }
-
-        public IGenericRepository<Measure> Measures
-        {
-            get
-            {
-                return this.GetRepository<Measure>();
-            }
-        }
-
-        public IGenericRepository<Memory> Memories
-        {
-            get
-            {
-                return this.GetRepository<Memory>();
-            }
-        }
-
-        public IGenericRepository<Os> Os
-        {
-            get
-            {
-                return this.GetRepository<Os>();
-            }
-        }
-
-        public IGenericRepository<Person> Persons
-        {
-            get
-            {
-                return this.GetRepository<Person>();
-            }
-        }
-
-        public IGenericRepository<Vendor> Vendors
-        {
-            get
-            {
-                return this.GetRepository<Vendor>();
             }
         }
 
@@ -131,15 +123,6 @@
             get
             {
                 return this.GetRepository<Store>();
-            }
-        }
-
-        public IGenericRepository<Producer> Producers
-        {
-            get
-            {
-                // TODO: Error ???
-                throw new NotImplementedException();
             }
         }
 

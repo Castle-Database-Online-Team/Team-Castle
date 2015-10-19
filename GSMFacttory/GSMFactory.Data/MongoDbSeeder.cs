@@ -31,14 +31,14 @@
 
         public void AddVendors()
         {
-            if (this.gsmFactoryData.Vendors.All().Any())
+            if (this.gsmFactoryData.Vendor.All().Any())
             {
                 return;
             }
 
             foreach (var vendors in this.mongoDb.Vendor.FindAll())
             {
-                this.gsmFactoryData.Vendors.Add(new Vendor()
+                this.gsmFactoryData.Vendor.Add(new Vendor()
                 {
                     Id = vendors.VendorId,
                     Name = vendors.VendorName,
@@ -51,14 +51,14 @@
 
         public void AddPersons()
         {
-            if (this.gsmFactoryData.Persons.All().Any())
+            if (this.gsmFactoryData.Person.All().Any())
             {
                 return;
             }
 
             foreach (var person in this.mongoDb.Persons.FindAll())
             {
-                this.gsmFactoryData.Persons.Add(new Person()
+                this.gsmFactoryData.Person.Add(new Person()
                 {
                     PersonId = person.PersonId,
                     PersonName = person.PersonName,
