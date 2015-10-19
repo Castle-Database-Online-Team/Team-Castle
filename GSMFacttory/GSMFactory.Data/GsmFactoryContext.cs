@@ -1,6 +1,5 @@
 ﻿namespace GsmFactory.Data
 {
-    using System;
     using System.Data.Entity;
     using Models;
 
@@ -8,7 +7,6 @@
     {
         public GsmFactoryContext() : base("GsmFactory")
         {
-            
         }
 
         public DbSet<Product> Products { get; set; }

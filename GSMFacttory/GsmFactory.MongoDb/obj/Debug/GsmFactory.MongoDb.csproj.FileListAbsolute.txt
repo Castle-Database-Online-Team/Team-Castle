@@ -7,6 +7,6 @@ D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Bson.xml
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.xml
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver.Legacy.xml
-D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.csprojResolveAssemblyReference.cache
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.dll
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.csprojResolveAssemblyReference.cache

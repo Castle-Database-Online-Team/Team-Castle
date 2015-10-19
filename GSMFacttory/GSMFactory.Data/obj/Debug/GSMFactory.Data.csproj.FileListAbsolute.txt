@@ -15,9 +15,6 @@ D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Data\bin\Debug\MongoDB.Dr
 D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.csprojResolveAssemblyReference.cache
 D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.dll
 D:\Telerik\DB\TeamWork\Teamwork\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.pdb
-D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.csprojResolveAssemblyReference.cache
-D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.dll
-D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.pdb
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\GSMFactory.Data.dll.config
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\GSMFactory.Data.dll
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\GSMFactory.Data.pdb
@@ -32,3 +29,6 @@ D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\EntityFramework.x
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\MongoDB.Bson.xml
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\MongoDB.Driver.xml
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.csprojResolveAssemblyReference.cache
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.pdb

@@ -1,7 +1,10 @@
 ﻿namespace GsmFactoryConsoleClient
 {
     using System;
+    using System.Collections.Generic;
+    using System.IO;
     using GsmFactory.Data;
+    using GsmFactory.JsonReport;
     using GsmFactory.Models;
 
     internal class GsmFactoryConsoleClient
@@ -10,11 +13,11 @@
         {
             var db = new GsmFactoryContext();
 
-            var Os = new Os();
+            var Os = new Os {Id = 5, Name = "Symbian"};
 
-            db.OperatingSystems.Add(Os);
-            db.SaveChanges();
+            var creator = new JsonReportCreator();
+            Console.WriteLine(creator.CreateReport<Os>(Os));
+            Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
         }
-
     }
 }

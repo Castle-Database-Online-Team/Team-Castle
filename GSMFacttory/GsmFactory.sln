@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSMFactory.Data", "GSMFacto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSMFactory.Models", "GSMFactory.Models\GSMFactory.Models.csproj", "{440DB582-C427-441C-BFCC-8474AC205FF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactory.CommonResources", "GsmFactory.CommonResources\GsmFactory.CommonResources.csproj", "{DA3416A3-71AD-43F9-BD13-15729A0170F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactory.Reports", "GsmFactory.JsonReport\GsmFactory.Reports.csproj", "{5688FF50-E830-46D8-9B51-0CD7340B3DB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{440DB582-C427-441C-BFCC-8474AC205FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440DB582-C427-441C-BFCC-8474AC205FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440DB582-C427-441C-BFCC-8474AC205FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3416A3-71AD-43F9-BD13-15729A0170F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3416A3-71AD-43F9-BD13-15729A0170F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3416A3-71AD-43F9-BD13-15729A0170F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3416A3-71AD-43F9-BD13-15729A0170F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

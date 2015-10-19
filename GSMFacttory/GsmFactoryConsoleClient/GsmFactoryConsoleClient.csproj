@@ -77,9 +77,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GsmFactory.CommonResources\GsmFactory.CommonResources.csproj">
+      <Project>{da3416a3-71ad-43f9-bd13-15729a0170f2}</Project>
+      <Name>GsmFactory.CommonResources</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GSMFactory.Data\GSMFactory.Data.csproj">
       <Project>{ad3095c9-1b1a-4240-99fc-0580d078beae}</Project>
       <Name>GSMFactory.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GsmFactory.JsonReport\GsmFactory.Reports.csproj">
+      <Project>{5688ff50-e830-46d8-9b51-0cd7340b3db1}</Project>
+      <Name>GsmFactory.Reports</Name>
     </ProjectReference>
     <ProjectReference Include="..\GSMFactory.Models\GSMFactory.Models.csproj">
       <Project>{440db582-c427-441c-bfcc-8474ac205ff3}</Project>
