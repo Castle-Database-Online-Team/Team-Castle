@@ -28,14 +28,8 @@
 
         public virtual ICollection<SalesReportEntry> SalesReportEntries
         {
-            get
-            {
-                return this.salesReportEntries;
-            }
-            set
-            {
-                this.salesReportEntries = value;
-            }
+            get { return this.salesReportEntries; }
+            set { this.salesReportEntries = value; }
         }
     }
 }

@@ -1,38 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GsmFactory.JsonReport
+﻿namespace GsmFactory.ReportCreators
 {
+    using System;
+    using System.Collections.Generic;
     using System.IO;
-    using System.Runtime.Serialization;
-    using System.Security.AccessControl;
     using System.Xml;
     using System.Xml.Serialization;
     using CommonResources;
 
     public class XmlReportCreator : ReportCreator
     {
-
         public XmlReportCreator()
         {
-            this.productsReportsEntries = new List<string>();
+            this.reportsEntries = new List<string>();
             this.fileExtention = "report.xml";
         }
 
-        public override string CreateReport<T>(T item)
+        public override string CreateReportEntry<T>(T item)
         {
             try
             {
-                XmlSerializer serializer = new XmlSerializer(item.GetType());
-                using (StringWriter sww = new StringWriter())
+                var serializer = new XmlSerializer(item.GetType());
+                using (var sww = new StringWriter())
                 {
-                    using (XmlWriter writer = XmlWriter.Create(sww))
+                    using (var writer = XmlWriter.Create(sww))
                     {
                         serializer.Serialize(writer, item);
-                        this.productsReportsEntries.Add(sww.ToString());
+                        this.reportsEntries.Add(sww.ToString());
                     }
                 }
             }
@@ -59,10 +52,10 @@ namespace GsmFactory.JsonReport
             {
                 Helper.CreateDirectoryIfUnexistant(path);
 
-                foreach (string reportEntry in this.productsReportsEntries)
+                foreach (var reportEntry in this.reportsEntries)
                 {
                     using (
-                        StreamWriter xmlReportFile = new StreamWriter(string.Format("{0}\\{1}", path, fileExtention), true))
+                        var xmlReportFile = new StreamWriter(string.Format("{0}\\{1}", path, this.fileExtention), true))
                     {
                         xmlReportFile.Write(reportEntry);
                     }

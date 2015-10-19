@@ -1,33 +1,27 @@
-﻿namespace GsmFactory.JsonReport
+﻿namespace GsmFactory.ReportCreators
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
     using System.IO;
-    using System.Linq;
-    using System.Runtime.Remoting.Services;
-    using System.Text;
     using CommonResources;
     using Newtonsoft.Json;
 
     public class JsonReportCreator : ReportCreator
     {
-        
-
         public JsonReportCreator()
         {
-            this.productsReportsEntries = new List<string>();
+            this.reportsEntries = new List<string>();
             this.fileExtention = ".json";
             this.folderExtention = "Json-Reports";
         }
 
-        public override string CreateReport<T>(T item)
+        public override string CreateReportEntry<T>(T item)
         {
             try
             {
-                this.objectType = item.GetType().ToString().Split(new char[] { '.' })[1];
-                this.productsReportsEntries.Add((JsonConvert.SerializeObject(item, Formatting.Indented,
-                new JsonSerializerSettings { PreserveReferencesHandling = PreserveReferencesHandling.Objects })));
+                this.objectType = item.GetType().ToString().Split('.')[1];
+                this.reportsEntries.Add((JsonConvert.SerializeObject(item, Formatting.Indented,
+                    new JsonSerializerSettings {PreserveReferencesHandling = PreserveReferencesHandling.Objects})));
 
                 return Constants.successfullCreationOfReports;
             }
@@ -35,7 +29,6 @@
             {
                 return ex.ToString();
             }
-
         }
 
         public override string SaveReport(string path)
@@ -44,11 +37,11 @@
             try
             {
                 Helper.CreateDirectoryIfUnexistant(path);
-                foreach (string reportEntry in this.productsReportsEntries)
+                foreach (var reportEntry in this.reportsEntries)
                 {
-                    string fileName = this.productsReportsEntries.IndexOf(reportEntry) + 1 + this.fileExtention;
+                    var fileName = this.reportsEntries.IndexOf(reportEntry) + 1 + this.fileExtention;
                     using (
-                        StreamWriter jsonReportFile = new StreamWriter(string.Format("{0}\\{1}", path, fileName), true))
+                        var jsonReportFile = new StreamWriter(string.Format("{0}\\{1}", path, fileName), true))
                     {
                         jsonReportFile.Write(reportEntry);
                     }
@@ -60,6 +53,5 @@
                 return ex.ToString();
             }
         }
-
     }
 }
