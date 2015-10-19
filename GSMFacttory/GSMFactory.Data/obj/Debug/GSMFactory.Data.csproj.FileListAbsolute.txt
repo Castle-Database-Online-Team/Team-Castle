@@ -32,3 +32,5 @@ D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\MongoDB.Driver.xm
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.csprojResolveAssemblyReference.cache
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.dll
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\obj\Debug\GSMFactory.Data.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\Ionic.Zip.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GSMFactory.Data\bin\Debug\Ionic.Zip.xml

@@ -10,3 +10,5 @@ D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\MongoDB.Driver
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.dll
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.pdb
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\obj\Debug\GsmFactory.MongoDb.csprojResolveAssemblyReference.cache
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Ionic.Zip.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Ionic.Zip.xml

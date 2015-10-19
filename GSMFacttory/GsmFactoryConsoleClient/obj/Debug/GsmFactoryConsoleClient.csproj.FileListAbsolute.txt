@@ -27,3 +27,5 @@ D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\Newtonsof
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\obj\Debug\GsmFactoryConsoleClient.csprojResolveAssemblyReference.cache
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\obj\Debug\GsmFactoryConsoleClient.exe
 D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\obj\Debug\GsmFactoryConsoleClient.pdb
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\Ionic.Zip.dll
+D:\Telerik\DB\ТВ\trunk\GSMFacttory\GsmFactoryConsoleClient\bin\Debug\Ionic.Zip.xml
