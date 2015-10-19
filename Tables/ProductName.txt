@@ -1,3 +1,0 @@
-ID	ProductName
-11000	Cellphone
-12000	Smartphone

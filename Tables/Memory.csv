@@ -1,4 +1,4 @@
-ID;Memory;MeasureID
+Id;MemoryName;MeasureId
 5000;No Memory;300
 5100;4;300
 5200;8;300

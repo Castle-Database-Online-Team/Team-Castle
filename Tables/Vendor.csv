@@ -1,11 +1,11 @@
-ID;Vendor;City;Adress
-10;Tecnomarket;30000;ul. First 1
-20;Tecnopolis;30000;ul. Second 1
-30;Zora;31000;ul. Pesho Peshev 1
-40;Emag;30000;ul. Ivan Ivaniv .5
-50;Zora;32000;ul.Nikola Nikolov 1
-60;Mobile Shope;36000;ul. Gosho Goshev 1
-70;Vega;31000;ul. Four 10
-80;Bros;33000;ul. Five 12
-90;Apple store;38000;ul. Six 13
-;;;
+Id;VendorName;City;Address;Person
+10;Tecnomarket;30000;ul. First 1;Pesho Peshev
+20;Tecnopolis;30000;ul. Second 1;Gosho Goshev
+30;Zora;31000;ul. Pesho Peshev 1;Ivan Ivanov
+40;Emag;30000;ul. Ivan Ivaniv .5;Mimi Marinva
+50;Zora;32000;ul.Nikola Nikolov 1;Sasho Sashev
+60;Mobile Shope;36000;ul. Gosho Goshev 1;Stamat stamatov
+70;Vega;31000;ul. Four 10;Rosen Petrov
+80;Bros;33000;ul. Five 12;Tosho Toshev
+90;Apple store;38000;ul. Six 13;Lili Ivanova
+;;;;
