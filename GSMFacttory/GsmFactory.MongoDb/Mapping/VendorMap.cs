@@ -20,12 +20,12 @@
 
         public int VendorId { get;  set; }
 
-        public int CityId { get;  set; }
+        public int CityId { get; set; }
 
         public string VendorName { get;  set; }
 
-        public string VendorAddress { get;  set; }
+        public string VendorAddress { get; set; }
 
-        public int Person { get;  set; }
+        public int Person { get; set; }
     }
 }

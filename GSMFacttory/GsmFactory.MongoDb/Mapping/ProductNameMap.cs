@@ -16,7 +16,7 @@
         [BsonId]
         public ObjectId Id { get; set; }
 
-        public int ProductNameId { get;  set; }
+        public int ProductNameId { get; set; }
 
         public string ProductName { get;  set; }
     }

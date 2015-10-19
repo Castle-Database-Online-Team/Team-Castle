@@ -22,6 +22,16 @@
             this.databaseName = databaseName;
         }
 
+        public MongoCollection<VendorMap> Vendor
+        {
+            get { return this.GetCollection<VendorMap>("Vendor"); }
+        }
+
+        public MongoCollection<PersonMap> Person
+        {
+            get { return this.GetCollection<PersonMap>("Person"); }
+        }
+
         public MongoCollection<ProductNameMap> ProductName
         {
             get { return this.GetCollection<ProductNameMap>("ProductName"); }
