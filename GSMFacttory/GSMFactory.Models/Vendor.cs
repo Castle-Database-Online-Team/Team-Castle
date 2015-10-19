@@ -1,18 +1,13 @@
 ﻿namespace GsmFactory.Models
 {
-    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     public class Vendor
     {
-        public Vendor()
-        {
-            this.Products = new HashSet<Product>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
+        [Required]
         public string Name { get; set; }
-
-        public virtual HashSet<Product> Products { get; set; }
     }
 }
