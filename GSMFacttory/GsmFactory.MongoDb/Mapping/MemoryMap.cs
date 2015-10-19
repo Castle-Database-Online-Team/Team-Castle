@@ -16,10 +16,10 @@
         [BsonId]
         public ObjectId Id { get; set; }
 
-        public int MeasureId { get; private set; }
+        public int MeasureId { get;  set; }
 
-        public int MemoryId { get; private set; }
+        public int MemoryId { get;  set; }
 
-        public string MemoryName { get; private set; }
+        public string MemoryName { get;  set; }
     }
 }

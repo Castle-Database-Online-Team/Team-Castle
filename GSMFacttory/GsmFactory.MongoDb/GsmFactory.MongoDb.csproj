@@ -72,6 +72,7 @@
     <Compile Include="Mapping\DisplayMap.cs" />
     <Compile Include="Mapping\MeasureМаp.cs" />
     <Compile Include="Mapping\MemoryMap.cs" />
+    <Compile Include="Mapping\PersonMap.cs" />
     <Compile Include="Mapping\PlatformOsMap.cs" />
     <Compile Include="Mapping\ProductMap.cs" />
     <Compile Include="Mapping\ProductNameMap.cs" />
