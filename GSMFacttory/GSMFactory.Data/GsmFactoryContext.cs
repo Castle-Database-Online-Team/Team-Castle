@@ -1,5 +1,6 @@
 ﻿namespace GsmFactory.Data
 {
+    using System;
     using System.Data.Entity;
     using Models;
 
