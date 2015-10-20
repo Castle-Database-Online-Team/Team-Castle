@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactory.CommonResources"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactory.Reports", "GsmFactory.JsonReport\GsmFactory.Reports.csproj", "{5688FF50-E830-46D8-9B51-0CD7340B3DB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GsmFactory.ZippedExcell", "ZipperExcell\GsmFactory.ZippedExcell.csproj", "{C480291B-9D54-4300-9F29-1F31A0F93BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5688FF50-E830-46D8-9B51-0CD7340B3DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C480291B-9D54-4300-9F29-1F31A0F93BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C480291B-9D54-4300-9F29-1F31A0F93BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C480291B-9D54-4300-9F29-1F31A0F93BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C480291B-9D54-4300-9F29-1F31A0F93BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

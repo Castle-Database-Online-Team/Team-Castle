@@ -22,5 +22,12 @@
             }
             return directory;
         }
+
+
+        public static string GetFileName(string directory)
+        {
+            var segments = directory.Split('\\');
+            return segments[segments.Count() - 1];
+        }
     }
 }
