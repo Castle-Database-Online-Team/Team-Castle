@@ -39,6 +39,7 @@
             //Console.WriteLine(creator.CreateReportEntry(person2));
             //Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\"));
 
+
             var result = Extractor.ExtractPersonFromFile(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\GSM.zip", Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Excel");
             foreach (Person person in result)
             {
@@ -47,6 +48,7 @@
                 Console.WriteLine(person.PersonName);
                 Console.WriteLine(person.Phone);
             }
+
         }
 
         private static void SeedDataFromMongoDB()
