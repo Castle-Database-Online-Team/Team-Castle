@@ -83,7 +83,7 @@
                 this.gsmFactoryData.Memory.Add(new Memory()
                 {
                     Id = memory.MemoryId,
-                    Size = memory.MemorySize,
+                    Size = memory.MemorySize.ToString(),
                     MeasureId = memory.MemoryId
 
                 });
@@ -120,7 +120,7 @@
                 this.gsmFactoryData.Display.Add(new Display()
                 {
                     Id = display.DisplayId,
-                    Size = display.DisplaySize,
+                    Size = display.DisplaySize.ToString(),
                     MeasureId = display.MeasureId
 
                 });

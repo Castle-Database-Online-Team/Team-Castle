@@ -1,6 +1,7 @@
 ﻿namespace GsmFactoryConsoleClient
 {
     using System;
+    using System.Data.Entity.Migrations;
     using GsmFactory.Data;
     using GsmFactory.Models;
     using GsmFactory.ReportCreators;
@@ -19,7 +20,7 @@
 
             //SeedDataFromMongoDB();
 
-            //var db = new GsmFactoryContext();
+            var db = new GsmFactoryContext();
 
             //var Os = new Os { Id = 5, Name = "Symbian" };
             //var Os2 = new Os { Id = 6, Name = "Windows Phone" };
@@ -40,14 +41,51 @@
             //Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\"));
 
 
-            var result = Extractor.ExtractPersonFromFile(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\GSM.zip", Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Excel");
-            foreach (Person person in result)
+            var result = Extractor.ExtractFromZip(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\GSM.zip", Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Excel");
+            foreach (Person person in result.Persons)
             {
-                Console.WriteLine(person.Email);
-                Console.WriteLine(person.PersonId);
-                Console.WriteLine(person.PersonName);
-                Console.WriteLine(person.Phone);
+                db.Persons.AddOrUpdate(person);
             }
+            foreach (Currency currency in result.Currencies)
+            {
+                db.Currencies.AddOrUpdate(currency);
+            }
+            foreach (Display display in result.Displays)
+            {
+                db.Displaies.AddOrUpdate(display);
+            }
+
+            foreach (Measure measure in result.Measures)
+            {
+                db.Measures.AddOrUpdate(measure);
+            }
+            foreach (Memory memory in result.Memories)
+            {
+                db.Memories.AddOrUpdate(memory);
+            }
+
+            foreach (Person person in result.Persons)
+            {
+                db.Persons.AddOrUpdate(person);
+
+            }
+
+            foreach (ProductType productType in result.ProductTypes)
+            {
+                db.ProductTypes.AddOrUpdate(productType);
+            }
+
+            foreach (Vendor vendor in result.Vendors)
+            {
+                db.Vendors.AddOrUpdate(vendor);
+            }
+            foreach (Producer producer in result.Producers)
+            {
+                db.Producers.AddOrUpdate(producer);
+            }
+
+            db.SaveChanges();
+         
 
         }
 

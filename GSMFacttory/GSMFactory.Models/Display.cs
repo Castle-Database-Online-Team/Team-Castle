@@ -8,7 +8,7 @@
         [Key]
         public int Id { get; set; }
 
-        public double Size { get; set; }
+        public string Size { get; set; }
 
         [ForeignKey("Measure")]
         public int MeasureId { get; set; }
