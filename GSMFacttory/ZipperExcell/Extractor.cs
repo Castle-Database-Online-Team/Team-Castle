@@ -10,13 +10,72 @@ namespace ZipperExcell
     using GsmFactory.Models;
     using Ionic.Zip;
     using LinqToExcel;
+    using Remotion.Data.Linq.Parsing.Structure.IntermediateModel;
 
     public static class Extractor
     {
+        public static List<List<object>> ExtractFromZip(string path, string outputDirectory)
+        {
+            Unzip(path,outputDirectory);
+            var 
+        }
+
+        public static List<Product> ExtractProductFromFile(string path, string outputDirectory)
+        {
+            List<Product> result = new List<Product>();
+            var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
+            var sheetName = "Product";
+            var excelFile = new ExcelQueryFactory(excellFilePath);
+            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in phones)
+            {
+                if (entry["Id"] != string.Empty)
+                {
+                    Product currentObject = new Product();
+                    currentObject.Model= entry["Model"];
+                    currentObject.Id = Convert.ToInt32(entry["Id"].ToString().Trim());
+                    currentObject.ProductName = Convert.ToInt32(entry["ProductName"].ToString().Trim());
+                    currentObject.ProducerId = Convert.ToInt32(entry["ProducerId"].ToString().Trim());
+                    currentObject.MeasureId = Convert.ToInt32(entry["MeasureId"].ToString().Trim());
+                    currentObject.DisplayId = Convert.ToInt32(entry["DisplayId"].ToString().Trim());
+                    currentObject.OSId = Convert.ToInt32(entry["PlatformOsId"].ToString().Trim());
+                    currentObject.MemoryId = Convert.ToInt32(entry["MemoryId"].ToString().Trim());
+                    currentObject.BasePrice = Convert.ToDecimal(entry["BasePrice"].ToString().Trim());
+                    currentObject.CurrencyId = Convert.ToInt32(entry["Id"].ToString().Trim());
+                    result.Add(currentObject);
+                }
+
+            }
+            return result;
+        }
+
+        public static List<Vendor> ExtractVendorFromFile(string path, string outputDirectory)
+        {
+            List<Vendor> result = new List<Vendor>();
+            var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
+            var sheetName = "Vendor";
+            var excelFile = new ExcelQueryFactory(excellFilePath);
+            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in phones)
+            {
+                if (entry["Id"] != string.Empty)
+                {
+                    Vendor currentObject = new Vendor();
+                    currentObject.Name = entry["ProducerName"];
+                    currentObject.Id = Convert.ToInt32(entry["Id"].ToString().Trim());
+                    currentObject.CityId = Convert.ToInt32(entry["City"].ToString().Trim());
+                    currentObject.VendorAddress = entry["Address"];
+                    currentObject.Person = Convert.ToInt32(entry["Person"].ToString().Trim());
+                    result.Add(currentObject);
+                }
+
+            }
+            return result;
+        }
+
         public static List<Producer> ExtractProducerFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
-            List<ProductType> result = new List<ProductType>();
+            List<Producer> result = new List<Producer>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Producer";
             var excelFile = new ExcelQueryFactory(excellFilePath);
@@ -25,7 +84,7 @@ namespace ZipperExcell
             {
                 if (entry["Id"] != string.Empty)
                 {
-                    ProductType currentObject = new ProductType();
+                    Producer currentObject = new Producer();
                     currentObject.Name = entry["ProducerName"];
                     currentObject.Id = Convert.ToInt32(entry["Id"].ToString().Trim());
                     result.Add(currentObject);
@@ -34,9 +93,9 @@ namespace ZipperExcell
             }
             return result;
         }
+
         public static List<ProductType> ExtractProductTypeFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<ProductType> result = new List<ProductType>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "ProductName";
@@ -58,7 +117,6 @@ namespace ZipperExcell
 
         public static List<Memory> ExtractMemoryFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<Memory> result = new List<Memory>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Memory";
@@ -81,7 +139,6 @@ namespace ZipperExcell
 
         public static List<Display> ExtractDisplayFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<Display> result = new List<Display>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Display";
@@ -104,7 +161,6 @@ namespace ZipperExcell
 
         public static List<Measure> ExtractMeasureFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<Measure> result = new List<Measure>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Measure";
@@ -126,7 +182,6 @@ namespace ZipperExcell
 
         public static List<Currency> ExtractCurrencyFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<Currency> result = new List<Currency>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Currency";
@@ -148,7 +203,6 @@ namespace ZipperExcell
 
         public static List<City> ExtractCityFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<City> result = new List<City>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "City";
@@ -170,7 +224,6 @@ namespace ZipperExcell
 
         public static List<Person> ExtractPersonFromFile(string path, string outputDirectory)
         {
-            Unzip(path, outputDirectory);
             List<Person> result = new List<Person>();
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Person";
