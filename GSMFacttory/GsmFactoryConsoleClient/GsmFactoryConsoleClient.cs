@@ -5,11 +5,19 @@
     using GsmFactory.Models;
     using GsmFactory.ReportCreators;
     using MongoDB.Driver;
+    using GsmFactory.Data.Contracts;
 
     internal class GsmFactoryConsoleClient
     {
+        private static GsmFactoryModule gsmFactoryModule;
+        private static ILogger logger;
+
         private static void Main()
         {
+            InitializeComponent();
+
+            SeedDataFromMongoDB();
+
             var db = new GsmFactoryContext();
 
             //var Os = new Os { Id = 5, Name = "Symbian" };
@@ -22,8 +30,8 @@
             //var creator = new XmlReportCreator();
             //Console.WriteLine(creator.CreateReport(Os));
             //Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
-             Person person = new Person{Email="onche.bonche@abv.bg",PersonName="Big Boss",Phone = "+359887653678"};
-             Person person2 = new Person { Email = "onche.adasdnche@abv.bg", PersonName = "Humble Employee", Phone = "+359sdfsfasf78" };
+            Person person = new Person { Email = "onche.bonche@abv.bg", PersonName = "Big Boss", Phone = "+359887653678" };
+            Person person2 = new Person { Email = "onche.adasdnche@abv.bg", PersonName = "Humble Employee", Phone = "+359sdfsfasf78" };
 
             var creator = new PdfReportCreator();
             Console.WriteLine(creator.CreateReportEntry(person));
@@ -31,5 +39,18 @@
             Console.WriteLine(creator.SaveReport(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\"));
 
         }
+
+        private static void SeedDataFromMongoDB()
+        {
+            gsmFactoryModule.ReadFromMongoDb();
+        }
+
+        private static void InitializeComponent()
+        {
+            logger = new ConsoleLogger();
+            gsmFactoryModule = new GsmFactoryModule(logger);
+        }
+
+
     }
 }

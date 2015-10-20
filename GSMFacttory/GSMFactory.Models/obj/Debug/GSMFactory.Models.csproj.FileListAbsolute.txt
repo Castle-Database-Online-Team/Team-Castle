@@ -85,3 +85,8 @@ C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GSMFactory.Models\b
 C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.csprojResolveAssemblyReference.cache
 C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.dll
 C:\Users\Ilian\Desktop\BazaDanniTeam\Team-Castle\GSMFacttory\GSMFactory.Models\obj\Debug\GSMFactory.Models.pdb
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Bson.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Core.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Legacy.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\MongoDB.Driver.Legacy.xml
