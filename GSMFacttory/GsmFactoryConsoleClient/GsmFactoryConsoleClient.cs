@@ -16,9 +16,9 @@
 
         private static void Main()
         {
-            //InitializeComponent();
+            // InitializeComponent();
 
-            //SeedDataFromMongoDB();
+            // SeedDataFromMongoDB();
 
             var db = new GsmFactoryContext();
 

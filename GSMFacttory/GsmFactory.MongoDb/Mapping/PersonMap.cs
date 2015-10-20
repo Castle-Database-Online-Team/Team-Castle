@@ -4,8 +4,7 @@
     using MongoDB.Bson.Serialization.Attributes;
 
     public class PersonMap
-    {
-        private object vendorAddress;
+    {       
 
         [BsonConstructor]
         public PersonMap(int personId, string personName, int phone, string email)

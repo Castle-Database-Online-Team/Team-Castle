@@ -158,7 +158,7 @@
                 {
                     Id = vendors.VendorId,
                     Name = vendors.VendorName,
-                    Person = vendors.Person,
+                    PersonId = vendors.Person,
                     CityId = vendors.CityId
 
                 });

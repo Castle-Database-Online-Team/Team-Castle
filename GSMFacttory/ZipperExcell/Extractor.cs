@@ -74,7 +74,7 @@ namespace ZipperExcell
                     currentObject.Id = Convert.ToInt32(entry["Id"].ToString().Trim());
                     currentObject.CityId = Convert.ToInt32(entry["City"].ToString().Trim());
                     currentObject.VendorAddress = entry["Address"];
-                    currentObject.Person = Convert.ToInt32(entry["Person"].ToString().Trim());
+                    currentObject.PersonId = Convert.ToInt32(entry["Person"].ToString().Trim());
                     result.Add(currentObject);
                 }
 
