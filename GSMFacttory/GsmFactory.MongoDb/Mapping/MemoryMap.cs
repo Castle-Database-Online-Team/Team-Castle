@@ -6,10 +6,10 @@
     public class MemoryMap
     {
         [BsonConstructor]
-        public MemoryMap(int memoryId, string memoryeName, int measureId)
+        public MemoryMap(int memoryId, int memoryeSize, int measureId)
         {
             this.MemoryId = memoryId;
-            this.MemoryName = memoryeName;
+            this.MemorySize = memoryeSize;
             this.MeasureId = measureId;
         }
 
@@ -20,6 +20,6 @@
 
         public int MemoryId { get; set; }
 
-        public string MemoryName { get; set; }
+        public int MemorySize { get; set; }
     }
 }

@@ -19,14 +19,130 @@
 
         public void Seed()
         {
-
+            this.AddOs();
+            this.AddDisplay();
+            this.AddCurrency();
             this.AddCities();
             this.AddPersons();
             this.AddVendors();
-            // this.AddProdusers();
+            this.AddProdusers();
+            this.AddProduserExpense();
             this.AddProductTypes();
+            this.AddMeasure();
+            this.AddMemory();
             this.AddProducts();
             this.SaveChanges();
+        }
+
+        private void AddProduserExpense()
+        {
+            if (this.gsmFactoryData.ProduserExpense.All().Any())
+            {
+                return;
+            }
+
+            foreach (var produserExpense in this.mongoDb.ProduserExpense.FindAll())
+            {
+                this.gsmFactoryData.ProduserExpense.Add(new ProduserExpense()
+                {
+                    ExpenseId = produserExpense.ProduserId,
+                    Expense = produserExpense.Expense,
+                    ReportDate = produserExpense.ReportDate
+
+                });
+            }
+        }
+
+        private void AddOs()
+        {
+            if (this.gsmFactoryData.Os.All().Any())
+            {
+                return;
+            }
+
+            foreach (var operationSystem in this.mongoDb.PlatformOs.FindAll())
+            {
+                this.gsmFactoryData.Os.Add(new Os()
+                {
+                    Id = operationSystem.PaltrformOsId,
+                    Name = operationSystem.PlatrformOsName
+
+                });
+            }
+        }
+
+        private void AddMemory()
+        {
+            if (this.gsmFactoryData.Memory.All().Any())
+            {
+                return;
+            }
+
+            foreach (var memory in this.mongoDb.Memory.FindAll())
+            {
+                this.gsmFactoryData.Memory.Add(new Memory()
+                {
+                    Id = memory.MemoryId,
+                    Size = memory.MemorySize,
+                    MeasureId = memory.MemoryId
+
+                });
+            }
+        }
+
+        private void AddMeasure()
+        {
+            if (this.gsmFactoryData.Measure.All().Any())
+            {
+                return;
+            }
+
+            foreach (var measure in this.mongoDb.Measure.FindAll())
+            {
+                this.gsmFactoryData.Measure.Add(new Measure()
+                {
+                    Id = measure.MeasureId,
+                    Name = measure.MeasureName
+
+                });
+            }
+        }
+
+        private void AddDisplay()
+        {
+            if (this.gsmFactoryData.Display.All().Any())
+            {
+                return;
+            }
+
+            foreach (var display in this.mongoDb.Display.FindAll())
+            {
+                this.gsmFactoryData.Display.Add(new Display()
+                {
+                    Id = display.DisplayId,
+                    Size = display.DisplaySize,
+                    MeasureId = display.MeasureId
+
+                });
+            }
+        }
+
+        private void AddCurrency()
+        {
+            if (this.gsmFactoryData.Currency.All().Any())
+            {
+                return;
+            }
+
+            foreach (var currency in this.mongoDb.Currensy.FindAll())
+            {
+                this.gsmFactoryData.Currency.Add(new Currency()
+                {
+                    Id = currency.CurrensyId,
+                    Name = currency.CurrensyName
+
+                });
+            }
         }
 
         public void AddVendors()
@@ -85,22 +201,22 @@
             }
         }
 
-        //public void AddProdusers()
-        //{
-        //    if (this.gsmFactoryData.Producers.All().Any())
-        //    {
-        //        return;
-        //    }
+        public void AddProdusers()
+        {
+            if (this.gsmFactoryData.Producers.All().Any())
+            {
+                return;
+            }
 
-        //    foreach (var produser in this.mongoDb.Produser.FindAll())
-        //    {
-        //        this.gsmFactoryData.Producers.Add(new Produser()
-        //        {
-        //            //ProduserId = produser.ProduserId,
-        //            ProduserName = produser.ProduserName
-        //        });
-        //    }
-        //}
+            foreach (var produser in this.mongoDb.Produser.FindAll())
+            {
+                this.gsmFactoryData.Producers.Add(new Producer()
+                {
+                    Id = produser.ProduserId,
+                    Name = produser.ProduserName
+                });
+            }
+        }
 
         public void AddProductTypes()
         {

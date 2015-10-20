@@ -6,10 +6,10 @@
     public class DisplayMap
     {
         [BsonConstructor]
-        public DisplayMap(int displayId, string displayeName, int measureId)
+        public DisplayMap(int displayId, double displayeSize, int measureId)
         {
             this.DisplayId = displayId;
-            this.DisplayName = displayeName;
+            this.DisplaySize = displayeSize;
             this.MeasureId = measureId;
         }
 
@@ -18,7 +18,7 @@
 
         public int DisplayId { get; set; }
 
-        public string DisplayName { get; set; }
+        public double DisplaySize { get; set; }
 
         public int MeasureId { get; set; }
     }

@@ -10,15 +10,21 @@ namespace GsmFactory.Data.Contracts
 
         IGenericRepository<Producer> Producers { get; }
 
+        IGenericRepository<ProduserExpense> ProduserExpense { get; }
+
         IGenericRepository<Person> Person { get; }
 
         IGenericRepository<City> Cities { get; }
+
+        IGenericRepository<Currency> Currency { get; }
 
         IGenericRepository<Display> Display { get; }
 
         IGenericRepository<Measure> Measure { get; }
 
         IGenericRepository<Memory> Memory { get; }
+
+        IGenericRepository<Os> Os { get; }
 
         IGenericRepository<Vendor> Vendor { get; }
 

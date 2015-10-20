@@ -126,6 +126,30 @@
             }
         }
 
+        public IGenericRepository<Currency> Currency
+        {
+            get
+            {
+                return this.GetRepository<Currency>();
+            }
+        }
+
+        public IGenericRepository<Os> Os
+        {
+            get
+            {
+                return this.GetRepository<Os>();
+            }
+        }
+
+        public IGenericRepository<ProduserExpense> ProduserExpense
+        {
+            get
+            {
+                return this.GetRepository<ProduserExpense>();
+            }
+        }
+
         public int SaveChanges()
         {
             return this.context.SaveChanges();
