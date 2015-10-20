@@ -67,3 +67,10 @@ D:\Telerik\DB\TW\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Remotion.dll
 D:\Telerik\DB\TW\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Remotion.Interfaces.dll
 D:\Telerik\DB\TW\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\LinqToExcel.xml
 D:\Telerik\DB\TW\trunk\GSMFacttory\GsmFactory.MongoDb\bin\Debug\log4net.xml
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\LinqToExcel.dll
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\log4net.dll
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Remotion.Data.Linq.dll
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Remotion.dll
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\Remotion.Interfaces.dll
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\LinqToExcel.xml
+D:\GitHub\Team-Castle\GSMFacttory\GsmFactory.MongoDb\bin\Debug\log4net.xml

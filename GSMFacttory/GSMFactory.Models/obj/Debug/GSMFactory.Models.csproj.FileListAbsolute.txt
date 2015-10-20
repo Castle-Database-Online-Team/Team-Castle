@@ -116,3 +116,10 @@ D:\Telerik\DB\TW\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\Remotion.dll
 D:\Telerik\DB\TW\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\Remotion.Interfaces.dll
 D:\Telerik\DB\TW\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\LinqToExcel.xml
 D:\Telerik\DB\TW\trunk\GSMFacttory\GSMFactory.Models\bin\Debug\log4net.xml
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\LinqToExcel.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\log4net.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\Remotion.Data.Linq.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\Remotion.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\Remotion.Interfaces.dll
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\LinqToExcel.xml
+D:\GitHub\Team-Castle\GSMFacttory\GSMFactory.Models\bin\Debug\log4net.xml
