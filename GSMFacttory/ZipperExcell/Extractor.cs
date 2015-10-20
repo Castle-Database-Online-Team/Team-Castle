@@ -10,24 +10,24 @@ namespace ZipperExcell
     using GsmFactory.Models;
     using Ionic.Zip;
     using LinqToExcel;
-    using Remotion.Data.Linq.Parsing.Structure.IntermediateModel;
 
     public static class Extractor
     {
         public static List<List<object>> ExtractFromZip(string path, string outputDirectory)
         {
             Unzip(path,outputDirectory);
-            var 
+            var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
+            var Products = ExtractProductFromFile(excellFilePath);
+            return new List<List<object>>();
         }
 
-        public static List<Product> ExtractProductFromFile(string path, string outputDirectory)
+        public static List<Product> ExtractProductFromFile(string excellFilePath)
         {
             List<Product> result = new List<Product>();
-            var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Product";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -55,8 +55,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Vendor";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -79,8 +79,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Producer";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -100,8 +100,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "ProductName";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -121,8 +121,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Memory";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -143,8 +143,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Display";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -165,8 +165,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Measure";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -186,8 +186,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Currency";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -207,8 +207,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "City";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
@@ -228,8 +228,8 @@ namespace ZipperExcell
             var excellFilePath = outputDirectory + @"\" + Helper.GetFileName(path).Replace(".zip", ".xls");
             var sheetName = "Person";
             var excelFile = new ExcelQueryFactory(excellFilePath);
-            var phones = from entries in excelFile.Worksheet(sheetName) select entries;
-            foreach (var entry in phones)
+            var objects = from entries in excelFile.Worksheet(sheetName) select entries;
+            foreach (var entry in objects)
             {
                 if (entry["Id"] != string.Empty)
                 {
